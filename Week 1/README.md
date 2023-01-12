@@ -1,4 +1,4 @@
-# Preparations
+## Preparations
 - Present the slides directly from Canva. 
 - Familiarise yourself with the Scratch game via the links below BEFORE the lesson.
 
