@@ -1,3 +1,6 @@
+![](https://github.com/trwstin/codecamp23/blob/main/images/codecamp%20logo_small.png)
+
+# Welcome to CodeCamp 2023!
 This repository contains the course material for CodeCamp 2023, which will be used by our student volunteers from NUS.
 
 ## About CodeCamp 2023
