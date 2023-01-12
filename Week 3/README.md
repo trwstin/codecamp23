@@ -6,7 +6,7 @@
   - Manual: Extract the tar.gz into '/packages' under your Python installation folder
 
 ## Lesson Slides
-TBC
+[View on Canva](https://www.canva.com/design/DAFXdp5zKbA/9zVgUA9VU_9ZEZqL9zsC3w/view?utm_content=DAFXdp5zKbA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Video Tutorial for Snake Game
 https://www.youtube.com/watch?v=BKwnOOs0ml8
