@@ -1,14 +1,12 @@
 # Hangman (Simple Version)
-# by TokyoEdTech
-# Python 3.8
 
 import os
-os.system("clear")
 import random
 
-# Initialize 
+# Initialize
 
-words = ["UBUNTU", "PYTHON", "TOKYOEDTECH", "GEANY"]
+# Students can add their own words
+words = ["CODECAMP", "PYTHON", "SINGAPORE", "COMPUTER", "LAPTOP", "CODING"]
 
 word = random.choice(words)
 guess = "-" * len(word)
@@ -51,7 +49,7 @@ while True:
         
     # Check for a winner
     if word == guess:
-        print("You win! And you live to play another day!")
+        print("You win!")
         print("""
      O
     \\|/
@@ -123,6 +121,6 @@ while True:
 
     # Check for a loser
     if len(wrong_letters) == 5:
-        print("You lose! Sorry sucker!")
+        print("You lose!")
         print(f"The word was {word}")
         exit()
