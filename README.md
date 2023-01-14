@@ -6,7 +6,7 @@ This repository contains the CodeCamp lesson material, which will be used by our
 ## About CodeCamp 2023
 CodeCamp 2023 is a student-run community service project led by the Computing Club of School of Computing (SoC), National University of Singapore (NUS).
 This annual initiative is planned by the Community Service Cell of the Computing Club under the Children Service Project.
-It is targeted at youths from underpriviliged households who have an interest in coding, and serves as a platform for SoC students to give back to the community and share useful knowledge which they have gained during their course of study at NUS.
+It is targeted at youths from underserved communities who have an interest in coding, and serves as a platform for SoC students to give back to the community and share useful knowledge which they have gained during their course of study at NUS.
 
 ## Objectives for Our Mentees (Children)
 - Have an enjoyable time during our weekly sessions
