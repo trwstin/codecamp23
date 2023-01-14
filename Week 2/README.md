@@ -1,5 +1,6 @@
 ## Preparations
 - Present the slides directly from Canva.
+- Familiarise yourself with rps.py (Scissors, Paper, Stone Game)
 - Ensure that Python 3.x and IDLE is correctly installed on your computer.
 
 ## Lesson Slides
