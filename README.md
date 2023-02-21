@@ -1,7 +1,7 @@
 ![](https://github.com/trwstin/codecamp23/blob/main/images/codecamp%20logo_small.png)
 
 # Welcome to CodeCamp 2023!
-This repository contains CodeCamp lesson materials, which will be used by our student volunteers from NUS.
+This repository contains CodeCamp lesson materials, which will be used by our student volunteers from NUS School of Computing.
 
 ## About CodeCamp 2023
 CodeCamp 2023 is a student-run community service project led by the Computing Club of School of Computing (SoC), National University of Singapore (NUS).
