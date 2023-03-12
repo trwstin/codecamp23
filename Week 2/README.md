@@ -5,3 +5,6 @@
 
 ## Lesson Slides
 [View on Canva](https://www.canva.com/design/DAFXdg_dOik/7YyEdAYr7jve7C7obasFBg/view?utm_content=DAFXdg_dOik&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+## Kahoot Link
+https://create.kahoot.it/share/codecamp-kahoot/534e5dce-79c9-4c78-b174-9662d19282a6
