@@ -1,6 +1,6 @@
 ## Preparations
 - Present slides directly from Canva.
-- Familiarise yourself with both .py games and their documentation BEFORE the lesson.
+- Familiarise yourself with snake.py BEFORE the lesson.
 - Ensure that the 'freegames' package is installed on your computer.
   - Terminal: python3 pip install freegames
   - Manual: Extract the tar.gz into '/packages' under your Python installation folder
