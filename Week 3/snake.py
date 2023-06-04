@@ -3,7 +3,7 @@ from random import randrange
 from freegames import square, vector
 
 screen = Screen()
-screen.setup(410, 410)
+screen.setup(402, 402)
 
 # First food will spawn in middle
 food = vector(0, 0)
