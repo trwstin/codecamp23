@@ -2,15 +2,15 @@ import random
 
 # Print multiline instruction
 # performstring concatenation of string
-print("Winning Rules of the Rock paper scissor game as follows: \n"
-	+ "Rock vs paper->paper wins \n"
-	+ "Rock vs scissor->Rock wins \n"
-	+ "paper vs scissor->scissor wins \n")
+print("Winning Rules of the Rock Paper Scissors game as follows: \n"
+	+ "Rock vs Paper -> Paper wins \n"
+	+ "Rock vs Scissors -> Rock wins \n"
+	+ "Paper vs Scissors -> Scissors wins \n")
 
 play = True
 
 while play:
-    print("Enter choice \n 1 for Rock, \n 2 for paper, and \n 3 for scissor \n")
+    print("Enter choice \n 1 for Rock, \n 2 for Paper, and \n 3 for Scissors \n")
 
 	# take the input from user
     choice = int(input("User turn: "))
@@ -20,11 +20,11 @@ while play:
     elif choice == 2:
         user_choice_name = "Paper"
     else:
-        user_choice_name = "Scissor"
+        user_choice_name = "Scissors"
 
     # print user choice
-    print("user choice is: " + user_choice_name)
-    print("\nNow its computer turn.......")
+    print("User's choice is: " + user_choice_name)
+    print("\nNow it's the computer's turn.......")
 
     # comp choice
     comp_choice = random.randint(1, 3)
@@ -34,27 +34,27 @@ while play:
     elif comp_choice == 2:
         comp_choice_name = "Paper"
     else:
-        comp_choice_name = "Scissor"
+        comp_choice_name = "Scissors"
 
     # print comp choice
-    print("Computer choice is: " + comp_choice_name)
+    print("Computer's choice is: " + comp_choice_name)
 
     # print vs
-    print(user_choice_name + " V/s " + comp_choice_name)
+    print(user_choice_name + " V/S " + comp_choice_name)
 
     result = "Lose"
     if choice == comp_choice:
         result = "Draw"
-    elif user_choice_name == "Rock" and comp_choice_name == "Scissor":
+    elif user_choice_name == "Rock" and comp_choice_name == "Scissors":
         result = "Win"
     elif user_choice_name == "Paper" and comp_choice_name == "Rock":
         result = "Win"
-    elif user_choice_name == "Scissor" and comp_choice_name == "Paper":
+    elif user_choice_name == "Scissors" and comp_choice_name == "Paper":
         result = "Win"
 
     # Printing either user or computer wins or draw
     if result == "Draw":
-        print("<== Its a tie ==>")
+        print("<== It's a tie ==>")
     elif result == "Win":
         print("<== User wins ==>")
     else:
@@ -70,4 +70,4 @@ while play:
 
 # after coming out of the while loop
 # we print thanks for playing
-print("\nThanks for playing")
+print("\nThanks for Playing!")
