@@ -2,6 +2,9 @@ from turtle import *
 from random import randrange
 from freegames import square, vector
 
+screen = Screen()
+screen.setup(410, 410)
+
 # First food will spawn in middle
 food = vector(0, 0)
 
@@ -61,7 +64,7 @@ def move():
 
 
 hideturtle()
-tracer(False)
+screen.tracer(False)
 listen()
 onkey(lambda: change(10, 0), 'Right') # affects x vector positively
 onkey(lambda: change(-10, 0), 'Left') # affects x vector negatively

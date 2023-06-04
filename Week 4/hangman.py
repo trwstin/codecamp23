@@ -1,6 +1,5 @@
 # Hangman (Simple Version)
 
-import os
 import random
 
 # Initialize
