@@ -24,32 +24,30 @@ print("""
 |---------""")
 
 # Main game loop
-# How do you begin a while loop?
-_____ ____:
+while True:
     print(f"Current Guess: {guess}")
     print(f"Wrong Guesses: {wrong_letters}")
     
-    # How do you get the user to enter an input?
-    letter = _____("\nPlease enter a letter. > ").upper()
+    letter = input("\nPlease enter a letter. > ").upper()
     
     # Check if the letter is in the word
-    __ ______ in word:
+    if letter in word:
         temp = ""
-        ___ index in range(len(word)):
-            __ letter == word[index]:
+        for index in range(len(word)):
+            if letter == word[index]:
                 temp += letter
-            ____ guess[index] != "-": # How do you provide an alternate if statement?
+            elif guess[index] != "-":
                 temp += guess[index]
-            ____: # What must be present to close an if statement?
+            else:
                 temp += "-"
         guess = temp
                 
-    ____: # Challenge! What do you think should go here?
+    else:
         wrong_letters += letter
         
         
-    # Check for a winner, when the word is same as the guess
-    __ ____ __ _____:
+    # Check for a winner
+    if word == guess:
         print("You win!")
         print("""
      O
@@ -59,9 +57,8 @@ _____ ____:
         exit()
 
     # Print the hangman
-    # Use the correct method to count the number of wrong letters in wrong_letters
 
-    if ___(wrong_letters) == 0:
+    if len(wrong_letters) == 0:
         print("""
 -------
 |     
@@ -71,7 +68,7 @@ _____ ____:
 |
 |---------""")
 
-    if ___(wrong_letters) == 1:
+    if len(wrong_letters) == 1:
         print("""
 -------
 |     O
@@ -81,7 +78,7 @@ _____ ____:
 |
 |---------""")
 
-    if ___(wrong_letters) == 2:
+    if len(wrong_letters) == 2:
         print("""
 -------
 |     O
@@ -91,7 +88,7 @@ _____ ____:
 |
 |---------""")
 
-    if ___(wrong_letters) == 3:
+    if len(wrong_letters) == 3:
         print("""
 -------
 |     O
@@ -101,7 +98,7 @@ _____ ____:
 |
 |---------""")
 
-    if ___(wrong_letters) == 4:
+    if len(wrong_letters) == 4:
         print("""
 -------
 |     O
@@ -111,7 +108,7 @@ _____ ____:
 |
 |---------""")
     
-    if ___(wrong_letters) == 5:
+    if len(wrong_letters) == 5:
         print("""
 -------
 |     |
@@ -122,7 +119,7 @@ _____ ____:
 |---------""")
 
     # Check for a loser
-    if ___(wrong_letters) == 5:
+    if len(wrong_letters) == 5:
         print("You lose!")
         print(f"The word was {word}")
         exit()

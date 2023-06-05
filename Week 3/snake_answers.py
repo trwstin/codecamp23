@@ -14,48 +14,47 @@ snake = [vector(10, 0)]
 # Initial direction of movement is set to downwards
 aim = vector(0, -10)
 
-___ change(x, y):
+def change(x, y):
     "Change snake direction."
     # Function is called on key press
     # Changes aim.x and aim.y, which gets passed into head.move in move() function
     aim.x = x
     aim.y = y
 
-___ inside(head):
+def inside(head):
     "Return True if head inside boundaries."
     # The boundary is between (-200, -200) and (190, 190)
     # Think of it as a large square
+    # Can draw a simple graph to help students visualise
     return -200 < head.x < 190 and -200 < head.y < 190
 
-___ move():
+def move():
     "Move snake forward one segment."
     # Makes the snake continue moving forward even without input
     head = snake[-1].copy()
     head.move(aim)
 
     # Game over if head is out of bounds or hits body
-    __ not inside(head) or head in snake:
+    if not inside(head) or head in snake:
         square(head.x, head.y, 9, 'red')
         update()
-        ______ # What must you include at the end of a function?
+        return
 
     snake.append(head)
 
     # Randomly decides next location of new food after eating previous food
-    # If position of head is equal to position of food, the snake will grow
-    # New food will appear in a new random position
-    __ head __ food:
-        print('Snake:', ___(snake)) # What allows you to count the number of elements in a list?
+    if head == food:
+        print('Snake:', len(snake))
         food.x = randrange(-15, 15) * 10
         food.y = randrange(-15, 15) * 10
-    ____:
+    else:
         snake.pop(0)
 
     clear()
 
     # Creates the snake using combination of squares (hence for loop)
     # Gains +1 body per food eaten, starts at 1
-    ___ body in snake:
+    for body in snake:
         square(body.x, body.y, 9, 'green')
 
     # Food is just 1 square
