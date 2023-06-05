@@ -1,7 +1,5 @@
 import random
 
-# Replace the Blanks(underscores) with the answers
-
 # Print multiline instruction
 # performstring concatenation of string
 print("Winning Rules of the Rock Paper Scissors game as follows: \n"
@@ -17,15 +15,15 @@ while play:
 	# take the input from player
     player_choice = int(input("Player turn: "))
 
-    # If player choose 1
+    # If player choose 1 for "Rock"
     if player_choice == 1:
         player_choice_name = "Rock"
-    # If player choose 2
+    # If player choose 2 for "Paper"
     elif player_choice == 2:
-        player_choice_name = "_____"
-    # If player choose 3
+        player_choice_name = "Paper"
+    # If player choose 3 for "Scissors"
     else:
-        player_choice_name = "________"
+        player_choice_name = "Scissors"
 
     # print player choice
     print("Player's choice is: " + player_choice_name)
@@ -34,41 +32,41 @@ while play:
     # Computer makes a random choice or 1, 2 or 3
     comp_choice = random.randint(1, 3)
 
-    # If Computer choose 1
+    # If Computer choose 1 for "Rock"
     if comp_choice == 1:
-        comp_choice_name = "____"
-    # If Computer choose 2
+        comp_choice_name = "Rock"
+    # If Computer choose 2 for "Paper"
     elif comp_choice == 2:
-        comp_choice_name = "_____"
-    # If Computer choose 3
+        comp_choice_name = "Paper"
+    # If Computer choose 3 for "Scissors"
     else:
-        comp_choice_name = "________"
+        comp_choice_name = "Scissors"
 
-    # print computer's choice
-    print("Computer's choice is: " + ________________)
+    # print comp choice
+    print("Computer's choice is: " + comp_choice_name)
 
-    # print player's choice vs computer's choice
-    print(player_choice_name + " V/S " + ________________)
+    # print vs
+    print(player_choice_name + " V/S " + comp_choice_name)
 
     # Base case: Player loses, result = "Lose"
     result = "Lose"
 
     # If choices are the same, change result to "Draw"
     if player_choice == comp_choice:
-        result = "____"
+        result = "Draw"
 
-    # If the Player Wins
+    # If the Player Wins, change result to "Win"
     elif player_choice_name == "Rock" and comp_choice_name == "Scissors":
-        result = "___"
-    elif player_choice_name == "Paper" and comp_choice_name == "____":
-        result = "___"
-    elif player_choice_name == "________" and comp_choice_name == "Paper":
-        result = "___"
+        result = "Win"
+    elif player_choice_name == "Paper" and comp_choice_name == "Rock":
+        result = "Win"
+    elif player_choice_name == "Scissors" and comp_choice_name == "Paper":
+        result = "Win"
 
     # Printing the Result of the game
-    if result == "____":
+    if result == "Draw":
         print("<== It's a tie ==>")
-    elif result == "___":
+    elif result == "Win":
         print("<== User wins ==>")
     else:
         print("<== Computer wins ==>")
@@ -79,7 +77,7 @@ while play:
 
     # if Player input n or N then change play to "False", to stop the While loop
     if ans == 'n':
-        play = _____
+        play = False
 
 # after coming out of the while loop
 # we print thanks for playing
