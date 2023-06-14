@@ -75,7 +75,7 @@ while play:
 
     # do you want to play again?
     print("Do you want to play again? (Y/N)")
-    ans = input().lower
+    ans = input().lower()
 
     # if Player input n or N then change play to "False", to stop the While loop
     if ans == 'n':
