@@ -25,7 +25,7 @@ while chances <= 5:
   # If Player's Guess is higher than the Number
   elif guess > num:
     print("That's incorrect! The number is less than " + str(guess) + "!")
-    print("You have " + str((5 - chances)) + " left!")
+    print("You have " + str((5 - chances)) + " tries left!")
     chances = chances + 1
 
 # Player has run out of Guesses
