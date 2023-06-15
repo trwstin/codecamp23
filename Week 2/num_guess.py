@@ -25,7 +25,7 @@ _____ chances <= 5:
   # If Player's Guess is higher than the Number
   ____ guess _ num:
     print("That's incorrect! The number is less than " + str(_____) + "!")
-    print("You have " + str((5 - _______)) + " left!")
+    print("You have " + str((5 - _______)) + " tries left!")
     _______ = _______ + 1
 
 # Player has run out of Guesses
